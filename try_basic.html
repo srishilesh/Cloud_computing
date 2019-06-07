@@ -9,27 +9,38 @@
     
     <img src="octocat.png" width="200" height="300" style="border-radius: 20px; margin-left: 500px;" alt="Amrita">
     <br><br>
-    <a href="https://www.amrita.edu/aums" style="margin-left: 500px;">Click here to open <abbr title="Amrita University Management System">AUMS</abbr></a>
+    <button type="button" onclick="alert('Redirecting to AUMS site')" style="margin-left: 500px;"><a href="https://www.amrita.edu/aums" >Click here to open <abbr title="Amrita University Management System">AUMS</abbr></a></button>
     <br><br><br>
-    <form style="text-align: center;">
+    <form style="text-align: center;" oninput="x.value=parseInt(a.value)">
         Rollnumber:<br>
         <input type="text" name="Rollno" value="CB.EN.U4CSE1458"><br>
         Name:<br>
         <input type="text" name="Rollno" value="Srishilesh P S"><br>
+        Age:<br>
+        0
+        <input type="range" id="a" name="a" value="50">
+        100
+        <br>
+        Age is <output name="x" for="a"></output>
+        <br>
+        Gender:<br>
+        <input type="radio" name="gender" value="male" checked>Male<br>
+        <input type="radio" name="gender" value="female">Female<br>
+        <input type="radio" name="gender" value="other">Other<br>
         Year of Study:<br>
-        <select name="Year of Study">
+        <input list="Year of Study" name="year">
+        <datalist id="Year of Study">
             <option value="first">First year</option>
             <option value="second">Second year</option>
             <option value="third">Third year</option>
             <option value="fourth">Fourth year</option>
 
-        </select>
+        </datalist>
+        <br>
+        Intro about yourself:<br>
+        <textarea name="Intro" rows="10" cols="30">Type somethin</textarea>
         <br><br>
         <input type="submit" value="Submit">
     </form>
 </body>
 </html>
-
-
-
-<!-- Basic HTML webpage as prerequisite --> 
