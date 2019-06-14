@@ -7,5 +7,6 @@ function change(){
     d = "even";
     else
     d = "odd";
+
     document.getElementById('jsdemo').innerHTML=d;
 }
