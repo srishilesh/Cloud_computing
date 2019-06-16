@@ -1,12 +1,35 @@
-function change(){
-    document.getElementById('jsdemo').innerHTML='Hello';
-    var a = 1;
-    var b = 2;
-    var c = a + b;var d;
-    if(c%2==0)
-    d = "even";
-    else
-    d = "odd";
+var s = "shilesh";
+var age  = 19
+alert(s + " is " + age + " years old");
 
-    document.getElementById('jsdemo').innerHTML=d;
+function sayingSomething(num,str)
+{
+    var c = str + " "+ num;
+    var i = 1;
+    while(i<10)
+    {
+    if(i%2==0)
+    document.write("Number "+i+" is Even\n")
+    else
+    document.write("Number "+i+" is Odd\n")
+    i++;
+    }
+    return 1;
+
 }
+
+var x = sayingSomething(7,"Ronaldo");
+if(x==1)
+alert("Exit successfully");
+var orc={
+    color:"green",
+    height:5,
+    weight:180,yell:function()
+    {
+        var stat = "Orcs are the best!";
+        stat = stat.bold();
+        document.write(stat);
+    }
+};
+orc.color;
+orc.yell();
