@@ -33,3 +33,10 @@ var orc={
 };
 orc.color;
 orc.yell();
+
+function validatename()
+        { var name = document.getElementById("hello").value;
+        var names = name.slice(1,4);
+        console.log(names);
+        document.getElementById("show").innerHTML = names;
+        }
