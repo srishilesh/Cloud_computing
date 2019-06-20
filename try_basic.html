@@ -65,9 +65,9 @@
     <br><br><br>
     <form style="text-align: center;" oninput="x.value=parseInt(a.value)">
         Rollnumber:<br>
-        <input type="text" name="Rollno" placeholder="CB.EN.U4CSE1458"><br>
+        <input type="text" name="Rollno" placeholder="CB.EN.U4CSE1458" ><br>
         Name:<br>
-        <input type="text" name="Name" placeholder="Srishilesh P S"><br>
+        <input type="text" name="Name" placeholder="Srishilesh P S" id="hello"><br>
         Age:<br>
         0
         <input type="range" id="a" name="a" value="50">
@@ -98,10 +98,14 @@
         <input type="reset">
     </form>
 </div>
-
-    <h1 id="jsdemo">Trying out JS</h1>
-    <button type="button" onclick=change()>Click here</button>
-    <script src="try.js"></script>
+    <p id="show"></p>
+    <button type="button" onclick=validatename()>Click here to validate</button>
+    
+    <script src="try.js">
+        
+        
+    </script>
+    
     
 </body>
 </html>
