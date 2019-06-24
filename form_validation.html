@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation</title>
+        <h2 style="font-family:Verdana, Geneva, Tahoma, sans-serif  ">Tell us about your home.</h2>
+        <span class="top">
+        <h2 style="color:rgb(0, 183, 255); display: inline;">Address </h2>
+        <h4 style="display: inline;">  YOUR INFORMATION IS PRIVATE</h4>
+        </span>
+        
+    </head>
+    <body>
+        <div class="top">
+        <form>
+            <br>
+            <b>Address</b><br> 
+            <input type="text" name="address" placeholder="Enter an address" style="width: 400px;"><br><br>
+            <b>Address 2</b><br>
+            <input type="text" name="address2" placeholder="Apt Number" style="width: 400px;"><br><br>
+            <div id="place">
+            <div id="city" style="float: left; margin-left: 3px;">
+                <b>City</b><br>
+                <input type="text" name="city" placeholder="City" style="width: 150px;">
+            </div>
+            <div id="state" style="float: left; margin-left:3px;">
+                <b>State</b><br>
+                <input type="text" name="state" placeholder="State" style="width:150px;">
+            </div>
+            <div id="zip" style="margin-left:2px;">
+                <b>Zip Code</b><br>
+                <input type="text" name="zip" placeholder="Zip Code" style="width: 90px;" maxlength="6"><br><br>
+            </div>
+            </div>
+        </form>
+        
+        </div>
+        <hr style="display: block">
+
+        <div class="bottom">
+                <span class="bottom">
+                <h2 style="color:rgb(0, 183, 255); display: inline;">Bed & Bath </h2>
+                <h4 style="display: inline;">  WHAT IS YOUR HOME LIKE?</h4>
+                </span>
+                <br><br>
+                <div id="bottom-left">
+                <form style="float: left;">
+                    Home Type<br>
+                    <select name="house" style="width: 200px;">
+                        <option value="house">House</option>
+                        <option value="hut">Hut</option>
+                        <option value="mansion">Mansion</option>
+                    </select><br><br>
+                    Bedrooms<br>
+                    <select name="bedroom" style="width:200px;">
+                        <option value="one">1 Bedroom</option>
+                        <option value="two">2 Bedroom</option>
+                        <option value="three">3 Bedrooms</option>
+                        <option value="many">More than 3 Bedrooms</option>
+                    </select><br><br>
+                    <div class="king" style="float: left;">
+                    King<br>
+                    <select name="king" style="width: 100px;">
+                        <option value="zerok">0</option>
+                        <option value="onek">1</option>
+                        <option value="twok">2</option>
+                        <option value="threek">3</option>
+                        <option value="fourk">4</option>
+                    </select>
+                    </div>
+                    <div class="queen" style="float: right;">
+                     Queen<br>
+                    <select name="queen" style="width: 100px;">
+                            <option value="zeroq">0</option>
+                            <option value="oneq">1</option>
+                            <option value="twoq">2</option>
+                            <option value="threeq">3</option>
+                            <option value="fourq">4</option>
+                    </select>
+                    </div>
+                    </div>
+                    <div id="bottom-right" style=" margin-left: 210px;">
+                        <form style="float: right;">
+                        Room Type<br>
+                        <select name="room" style="width: 200px;">
+                            <option value="house">House</option>
+                            <option value="hut">Hut</option>
+                            <option value="mansion">Mansion</option>
+                        </select><br><br>
+                        Bathrooms<br>
+                        <select name="bathroom" style="width:200px;">
+                            <option value="one">1 Bathroom</option>
+                            <option value="two">2 Bathroom</option>
+                            <option value="three">3 Bathroom</option>
+                            <option value="many">More than 3 Bathroom</option>
+                        </select><br><br>
+                        <div class="full" style="float: left;">
+                        Full<br>
+                        <select name="full" style="width: 100px;">
+                            <option value="zerof">0</option>
+                            <option value="onef">1</option>
+                            <option value="twof">2</option>
+                            <option value="threef">3</option>
+                            <option value="fourf">4</option>
+                        </select>
+                        </div>            
+                        <div class="twin">
+                        Twin<br>
+                        <select name="twin" style="width: 100px;">
+                            <option value="zerot">0</option>
+                            <option value="onet">1</option>
+                            <option value="twot">2</option>
+                            <option value="threet">3</option>
+                            <option value="fourt">4</option>
+                        </select>
+                        </div>
+                    </div>
+
+                </form>
+
+        </div>
+        <br>
+        <button type="submit" style="width: 415px;">Sign me up!</button>
+
+    </body>
+</html>
