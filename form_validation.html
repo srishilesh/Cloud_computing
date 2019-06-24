@@ -2,44 +2,44 @@
 <html>
     <head>
         <title>Form Validation</title>
-        <h2 style="font-family:Verdana, Geneva, Tahoma, sans-serif  ">Tell us about your home.</h2>
-        <span class="top">
-        <h2 style="color:rgb(0, 183, 255); display: inline;">Address </h2>
-        <h4 style="display: inline;">  YOUR INFORMATION IS PRIVATE</h4>
-        </span>
-        
+        <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif  ">Tell us about your home.</h2>
+    <link rel="stylesheet" href="form_validatecss.css">
     </head>
     <body>
         <div class="top">
+                <span class="top">
+                    <h2>Address </h2>
+                    <h4>  YOUR INFORMATION IS PRIVATE</h4>
+                </span>
         <form>
             <br>
             <b>Address</b><br> 
-            <input type="text" name="address" placeholder="Enter an address" style="width: 400px;"><br><br>
+            <input type="text" name="address" id="addr" placeholder="Enter an address"><br><br>
             <b>Address 2</b><br>
-            <input type="text" name="address2" placeholder="Apt Number" style="width: 400px;"><br><br>
-            <div id="place">
-            <div id="city" style="float: left; margin-left: 3px;">
+            <input type="text" name="address2" id="addr2" placeholder="Apt Number"><br>
+            <div class="place">
+            <div>
                 <b>City</b><br>
-                <input type="text" name="city" placeholder="City" style="width: 150px;">
+                <input type="text" name="city" id="city" placeholder="City">
             </div>
-            <div id="state" style="float: left; margin-left:3px;">
+            <div>
                 <b>State</b><br>
-                <input type="text" name="state" placeholder="State" style="width:150px;">
+                <input type="text" name="state" id="state" placeholder="State">
             </div>
-            <div id="zip" style="margin-left:2px;">
+            <div>
                 <b>Zip Code</b><br>
-                <input type="text" name="zip" placeholder="Zip Code" style="width: 90px;" maxlength="6"><br><br>
+                <input type="text" name="zip" id="zip" placeholder="Zip Code"  maxlength="6"><br><br>
             </div>
             </div>
         </form>
         
         </div>
-        <hr style="display: block">
+        <hr>
 
         <div class="bottom">
                 <span class="bottom">
-                <h2 style="color:rgb(0, 183, 255); display: inline;">Bed & Bath </h2>
-                <h4 style="display: inline;">  WHAT IS YOUR HOME LIKE?</h4>
+                <h2>Bed & Bath </h2>
+                <h4>  WHAT IS YOUR HOME LIKE?</h4>
                 </span>
                 <br><br>
                 <div id="bottom-left">
@@ -59,7 +59,7 @@
                     </select><br><br>
                     <div class="king" style="float: left;">
                     King<br>
-                    <select name="king" style="width: 100px;">
+                    <select name="king" style="width: 100px; margin:3px;">
                         <option value="zerok">0</option>
                         <option value="onek">1</option>
                         <option value="twok">2</option>
@@ -67,7 +67,7 @@
                         <option value="fourk">4</option>
                     </select>
                     </div>
-                    <div class="queen" style="float: right;">
+                    <div class="queen" style="float: right; margin:3px;">
                      Queen<br>
                     <select name="queen" style="width: 100px;">
                             <option value="zeroq">0</option>
@@ -93,7 +93,7 @@
                             <option value="three">3 Bathroom</option>
                             <option value="many">More than 3 Bathroom</option>
                         </select><br><br>
-                        <div class="full" style="float: left;">
+                        <div class="full" style="float: left; margin:3px;" >
                         Full<br>
                         <select name="full" style="width: 100px;">
                             <option value="zerof">0</option>
@@ -103,7 +103,7 @@
                             <option value="fourf">4</option>
                         </select>
                         </div>            
-                        <div class="twin">
+                        <div class="twin" style="margin:3px;">
                         Twin<br>
                         <select name="twin" style="width: 100px;">
                             <option value="zerot">0</option>
@@ -119,7 +119,10 @@
 
         </div>
         <br>
-        <button type="submit" style="width: 415px;">Sign me up!</button>
+        <button type="submit" onclick="validate()" style="width: 415px; " id="submit">Sign me up!</button>
+        <script src="form_validatejs.js">
+
+        </script>
 
     </body>
 </html>
