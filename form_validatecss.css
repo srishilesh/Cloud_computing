@@ -1,0 +1,41 @@
+body{
+    border:3px dotted rgb(0, 183, 255); 
+    margin:21%; 
+    padding: 30px;
+}
+h2
+{
+    color:rgb(0, 183, 255); display: inline;
+}
+h4
+{
+    display: inline;
+}
+#addr
+{
+    width: 400px;
+}
+#addr2
+{
+    width: 400px;
+}
+.place
+{
+    display: inline-block;
+    margin:3px;
+}
+#city
+{
+    width:150px;
+}
+#state
+{
+    width:150px;
+}
+#zip
+{
+    width:90px;
+}
+hr{
+    border:3px dotted rgb(0, 183, 255);
+}
