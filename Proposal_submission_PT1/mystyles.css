@@ -1,0 +1,43 @@
+.title{
+    background-color: brown;
+    padding: 1%;
+    text-align: center;
+    color: white;
+}
+.main{
+    padding-left:15%;
+    padding-right: 15%;
+}
+span{
+    color: red;
+}
+.gen{
+    margin-top: 1%;
+    margin-left: 2%;
+    width: 80%;
+    padding-bottom: 0.5%;
+}
+.eg{
+    color: gray;
+    font-size: 9px;
+    margin-left: 2%;
+}
+.end{
+    font-size: 10px;
+}
+.review{
+    margin-top: 1%;
+    margin-left: 2%;
+    padding-bottom: 3%;
+    width: 80%;
+    border-block-width: 20%;
+}
+.submit{
+    background-color: rgb(235, 25, 25);
+    width: 12%;
+    padding: 0.8%
+}
+.submit:hover
+{
+    background-color: rgb(187, 28, 28);
+}
