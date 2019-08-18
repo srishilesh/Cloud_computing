@@ -1,0 +1,42 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Signup</title>
+        <style>
+            label,input{
+                margin: 5px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <form action="/login" method="POST">
+            <center><h2 style="margin: 30px">Login Page</h2></center>
+            <fieldset>
+                <legend>LOGIN INFORMATION</legend>
+                <table>
+                <tr>
+                    <td>
+                        <label for="username">User Name</label>
+                        <input type="text" name="username" value="" required></br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" value="" required></br>
+                    </td>
+                </tr>
+                
+                    
+                
+            </table>
+            <input type="submit" value="Sign In" id="signin">
+        </form>
+        <form action="/register" method="POST">
+            <input type="submit" value="Register" id="register">
+        </form>
+    </body>
+</html>

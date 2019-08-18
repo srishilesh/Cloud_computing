@@ -1,0 +1,126 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+    <form action="/donor" method="POST">
+            <h2 style="margin: 30px">Register as a Blood Donor</h2>
+            <fieldset>
+                <legend>LOGIN INFORMATION</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="fullname">Full Name</label></br>
+                        <input type="text" name="fullname" value="" required>
+                    </td>
+                    <td>
+                            <label for="password">Password</label></br>
+                            <input type="password" name="password" value="" required>
+                    </td>
+                </tr>
+                <tr>
+                        <td>
+                            <label for="emailid">Email ID</label></br>
+                            <input type="email" name="emailid" value="" required>
+                        </td>
+                        <td>
+                                <label for="cpass">Confirm Password</label></br>
+                                <input type="password" name="cpass" value="" required>
+                        </td>
+                    </tr>
+            </table>
+        </fieldset>
+        </br>
+        
+        </br>
+        
+        <fieldset>
+                <legend>DONOR INFORMATION</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="dob">Date of Birth</label></br>
+                        <input type="date" name="dob" value="" required>
+                    </td>
+                    <td>
+                            <label for="gender">Gender</label></br>
+                            <div class="radiobutton">
+                                    <input type="radio" name="gender" value="male">Male
+                                    <input type="radio" name="gender" value="female">Female
+                            </div>   
+                    </td>
+                </tr>
+                <tr>
+                        <td>
+                            <label for="bg">Your Blood Group</label></br>
+                            <div class="bg">
+                                    <input list="bloodGroups" name="bloodGroup">
+                                    <datalist id="bloodGroups">
+                                            <option value="O+">
+                                            <option value="AB-">
+                                            <option value="B+">
+                                    </datalist>
+                            </div>
+                        </td>
+                        <td>
+                                <label for="weight">Weight (Kg)</label></br>
+                                <input type="number" name="weight" min="40" max="110" value="" required></input>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="countBlood">How often you donate blood?</label></br>
+                        <input type="number" name="countBlood" value=""></input><br>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+                <legend>CONTACT INFORMATION</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="rphone">Residence Phone</label></br>
+                        <input type="text" name="rphone" value="" required>
+                    </td>
+                    <td>
+                        <label for="mobile">Mobile No</label></br>
+                        <input type="tel" name="mobile" pattern="[0-9]{10}" value="" required>
+                    </td>
+                </tr>
+                <tr>
+                        <td>
+                            <label for="address">Address</label></br>
+                            <textarea rows="4" cols="50" name="address" value=""></textarea>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cityc">City</label></br>
+                        <div class="cityc">
+                                <input list="citys" name="city">
+                                <datalist id="citys">
+                                    <option value="Hyderabad">
+                                    <option value="Coimbatore">
+                                    <option value="Nellore">
+                                </datalist>
+                        </div>
+                        <br>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <div class="checkboxes">
+                <input type="checkbox" name="eligibility" value="Yes">I have read the Eligibity Criteriaand confirm that I am eligible to donate blood.</input>
+                <br>
+                <input type="checkbox" name="terms" value="Yes">I agree to the Terms and Conditions and consent to have my contact donor information published to the potential blood recipients.</input>
+                <br><br>
+        </div>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
